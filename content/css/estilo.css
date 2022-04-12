@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0px;
     display: grid;
-    grid-template-rows: 60px 2fr 30px;
+    grid-template-rows: 120px 1fr 60px;
     grid-template-columns: 1fr;
     grid-template-areas: 
         "cabecalho"
@@ -34,9 +34,15 @@ body {
     font-size: 2.8rem;
 }
 
+.cabecalho > h2 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
 .principal {
     grid-area: principal;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 180px);
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -44,6 +50,7 @@ body {
 .conteudo {
     position: relative;
     height: 100%;
+    overflow-y: scroll;
     background-color: #fff;
     padding: 20px;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
@@ -130,15 +137,3 @@ body {
 
 .modulo.roxo-escuro { border: 2px solid #4A148C; }
 .modulo.roxo-escuro > h3 { background-color: #4A148C; }
-
-form.dados {
-    display: inline;
-    text-align: start;
-}
-
-
-input {
-    display: inline-block;
-    float: right;
-    margin-left: 30px;
-}
