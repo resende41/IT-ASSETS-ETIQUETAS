@@ -5,7 +5,7 @@
             <td colspan="2" style="text-align:center; font-size: 20px"><b>IT ASSET</b></td>
         </tr>
             <tr>
-                <th>EQUIPAMENTO</th>
+                <th>COD</th>
                 <td>
                     <?php
                     $cod = $_POST['cod'];
@@ -13,19 +13,6 @@
                         echo "Vazio";
                     } else {
                         echo $cod;
-                    }
-                    ?>
-                </td>
-            </tr>
-            <tr>
-                <th>IP</th>
-                <td>
-                    <?php
-                    $ip = $_POST['ip'];
-                    if (empty($ip)) {
-                        echo "Vazio";
-                    } else {
-                        echo $ip;
                     }
                     ?>
                 </td>
